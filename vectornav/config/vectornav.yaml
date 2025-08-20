@@ -31,8 +31,10 @@ vectornav:
       commonField: 0x7FFF
       timeField: 0x0000              # TIMEGROUP_NONE
       imuField: 0x0000               # IMUGROUP_NONE
+      gpsField: 0x0210               # GPSGROUP_FIX (0x10) | GPS_GROUP_POSU (0x200)
       # set gpsField directly in source to enforce or condition
       attitudeField: 0x0000          # ATTITUDEGROUP_NONE
+      insField: 0x000C               # INSGROUP_POSECEF (0x04) | INSGROUP_VELBODY (0x08)
       # set insField directly in source to enforce or condition
       gps2Field: 0x0000              # GPSGROUP_NONE
     # Binary output register 2
